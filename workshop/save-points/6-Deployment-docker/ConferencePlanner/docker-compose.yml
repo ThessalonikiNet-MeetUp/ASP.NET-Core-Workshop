@@ -1,0 +1,30 @@
+version: '3.3'
+
+services:
+  proxy:
+    image: confproxy
+    build:
+      context: .
+      dockerfile: proxy/Dockerfile
+    links:
+      - backend
+      - frontend
+
+  backend:
+    image: backend
+    build:
+      context: .
+      dockerfile: BackEnd/Dockerfile
+    links:
+      - db
+
+  frontend:
+    image: frontend
+    build:
+      context: .
+      dockerfile: FrontEnd/Dockerfile
+    links:
+      - backend
+
+  db:
+    image: "microsoft/mssql-server-linux"
