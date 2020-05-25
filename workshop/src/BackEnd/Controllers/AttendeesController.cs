@@ -20,9 +20,9 @@ namespace BackEnd
         [HttpGet("{username}")]
         public async Task<IActionResult> Get(string username)
         {
-            var attendee = await _db.Attendees.Include(a => a.SessionsAttendees)
+            var attendee = await _db.Attendees.Include(x => x.SessionsAttendees)
                                                 .ThenInclude(sa => sa.Session)
-                                              .SingleOrDefaultAsync(a => a.UserName == username);
+                                              .SingleOrDefaultAsync(x => x.UserName == username);
 
             if (attendee == null)
             {
