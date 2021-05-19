@@ -2,7 +2,11 @@
 
 ## Presentations
 
-
+- Workshop overview
+- Application overview
+- asp.net core (concepts, what's new, standards)
+- MVC Overview (Concepts, What's new)
+- Security Overview
 
 
 ## Lessons
@@ -14,6 +18,10 @@
 https://dotnet-presentations.github.io/
 https://github.com/dotnet-presentations/aspnetcore-app-workshop
 https://github.com/dotnet-presentations/aspnetcore-app-workshop/tree/master/save-points
+
+
+http://www.talkingdotnet.com/new-features-of-net-core-2-1/
+http://azurecoder.net/
 
 ## Programs And Resources
 LocalDb 
